@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int* pPointer = nullptr;
+    
+    int integervar = 5;
+    
+    pPointer = &integervar;
+    
+    cout << "integervar: " << integervar << endl;
+    
+    cout << "Adress of integervar: " << &integervar << endl;
+    
+    cout << "pPointer: " << pPointer << endl;
+    
+    cout << "Adress of pPointer: " << &pPointer << endl;
+
+    return 0;
+}
