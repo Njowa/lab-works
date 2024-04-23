@@ -1,0 +1,35 @@
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+  
+    int *dynamicInteger = new int;
+
+   
+    cout << "Enter the value of the dynamically allocated integer ";
+    cin >> *dynamicInteger;
+
+    
+    string *dynamicString = new string;
+
+    
+    cout << "Enter the value of the dynamically allocated string ";
+    cin.ignore(); 
+    getline(cin, *dynamicString);
+
+   
+    cout << "The value of the dynamically allocated integer is " << *dynamicInteger << std::endl;
+
+    
+    cout << "The value of the dynamically allocated string is " << *dynamicString << std::endl;
+
+    
+    delete dynamicInteger;
+    delete dynamicString;
+
+    return 0;
+}
+
